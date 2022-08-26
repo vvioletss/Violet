@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Russo-Ukrainian War</title>
+    <style>
+            body {
+              background: linear-gradient(
+                to right,
+                rgb(182, 244, 146),
+                rgb(51, 139, 147)
+              );
+            }
+            h1 {
+              text-align: center;
+
+              font-family: Arial, Helvetica, sans-serif;
+              color: black;
+              background-color: #71795249;
+              line-height: 50px;
+              padding: 20px;
+              font-size: 37px;
+              border-radius: 37px;
+            }
+            h2 {
+              text-align: center;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              color: #494946;
+              border: 1px solid #0971c6d7;
+              line-height: 50px;
+              padding: 20px;
+              font-size: 30px;
+              border-radius: 37px;
+            }
+            img {
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              padding: 30px;
+              border-radius: 50px;
+              width: 820px;
+            }
+            p {
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              line-height: 1.7;
+              font-size: 18px;
+              margin: 0 0 30px;
+            }
+            button {
+              display: block;
+              margin: 60px auto;
+
+              font-size: 20px;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+              color: rgb(255, 255, 255);
+              padding: 30px 30px;
+              border: none;
+              border-radius: 50px;
+              box-shadow: 10px 5px 5px rgba(31, 29, 29, 0.349);
+              opacity: 0.9;
+              background: radial-gradient(
+                circle at 12.3% 19.3%,
+                rgb(85, 88, 218) 0%,
+                rgb(95, 209, 249) 100.2%
+              );
+            }
+            button:hover {
+      background: radial-gradient(circle at 3% 4.8%, rgb(169, 224, 127) 0%, rgb(248, 247, 121) 86.6%);
+
+              );
+
+              color: #3765b1;
+              cursor: pointer;
+              transition: all 200ms ease-in-out;
+
+              opacity: 0.9;
+            }
+            .morePhotos {
+              display: block;
+              margin-top: 0;
+              padding: 15px;
+              text-decoration: none;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              color: #0971c6;
+              text-align: center;
+              font-size: 19px;
+            }
+            .morePhotos:hover {
+              text-decoration: underline;
+              color: #d3d341;
+            }
+            .container {
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 40px;
+            }
+            .footer {
+              text-align: center;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              text-decoration: none;
+            }
+            .creatorPage {
+              text-decoration: none;
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: #0971c6;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RUSSO-UKRAINIAN WAR</h1>
+      <img
+        src="https://dynaimage.cdn.cnn.com/cnn/w_1600/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F220303153024-01-ukraine-fadek-0303.jpg"
+        alt="WarInUkraine"
+        width="600px"
+      />
+      <br />
+
+      <a
+        href="https://war.ukraine.ua/photos/page/3/"
+        target="_blank"
+        class="morePhotos"
+      >
+        More photos of russian invasion of Ukraine here</a
+      >
+      <h2>2022 Russian invasion of Ukraine</h2>
+      <p>
+        On 24 February 2022, Russia invaded Ukraine in a major escalation of the
+        Russo-Ukrainian War that began in 2014. The invasion caused Europe's
+        largest refugee crisis since World War II, with around 6.7 million
+        Ukrainians fleeing the country and a third of the population displaced.
+        The invasion also caused global food shortages.
+        <br />
+        <br />
+        In 2014, Russia invaded and annexed Crimea, and Russian-backed
+        separatists seized part of the Donbas region of south-eastern Ukraine,
+        consisting of Luhansk and Donetsk oblasts, sparking a regional war. In
+        2021, Russia began a large military build-up along its border with
+        Ukraine, amassing up to 190,000 troops and their equipment. In a
+        televised address shortly before the invasion, Russian president
+        Vladimir Putin espoused irredentist views, challenged Ukraine's right to
+        statehood, and falsely claimed Ukraine was governed by neo-Nazis who
+        persecuted the ethnic Russian minority. On 21 February 2022, Russia
+        recognised the Donetsk People's Republic and the Luhansk People's
+        Republic, two self-proclaimed breakaway quasi-states in Donbas. The next
+        day, the Federation Council of Russia authorised the use of military
+        force, and Russian troops promptly advanced on both territories.
+        <br />
+      </p>
+      <button class="donateButton">🙏 Donate injured children</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.instagram.com/vvioletss/"
+          target="_blank"
+          class="creatorPage"
+        >
+          Violetta Hryhorchuk</a
+        >
+      </p>
+    </div>
+    <script>
+      function donate() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let sum = prompt(`How much would you like to donate?`);
+        alert(
+          `Thank you ${name} 💙, payment receipt will be sent to your email`
+        );
+      }
+      let donateButton = document.querySelector(".donateButton");
+      donateButton.addEventListener("click", donate);
+    </script>
+  </body>
+</html>
